@@ -1,0 +1,140 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://OptionButton.gd" type="Script" id=1]
+[ext_resource path="res://OptionButton2.gd" type="Script" id=2]
+[ext_resource path="res://OptionButton3.gd" type="Script" id=3]
+[ext_resource path="res://OptionButton4.gd" type="Script" id=4]
+[ext_resource path="res://OptionButton5.gd" type="Script" id=5]
+[ext_resource path="res://Button.gd" type="Script" id=6]
+[ext_resource path="res://Menu.gd" type="Script" id=7]
+
+[node name="Menu" type="Control"]
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 242.0
+margin_bottom = 120.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 80.0
+margin_top = 80.0
+margin_right = 280.0
+margin_bottom = 110.0
+text = "Gravity Indicators"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 80.0
+margin_top = 280.0
+margin_right = 280.0
+margin_bottom = 310.0
+text = "Gravity"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 80.0
+margin_top = 480.0
+margin_right = 280.0
+margin_bottom = 510.0
+text = "Scoring"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 580.0
+margin_top = 80.0
+margin_right = 780.0
+margin_bottom = 110.0
+text = "Wind Indicators"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 580.0
+margin_top = 280.0
+margin_right = 780.0
+margin_bottom = 310.0
+text = "Wind"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton2" type="OptionButton" parent="."]
+margin_left = 600.0
+margin_top = 100.0
+margin_right = 742.0
+margin_bottom = 120.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 2 )
+
+[node name="OptionButton3" type="OptionButton" parent="."]
+margin_left = 100.0
+margin_top = 300.0
+margin_right = 242.0
+margin_bottom = 320.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton4" type="OptionButton" parent="."]
+margin_left = 600.0
+margin_top = 300.0
+margin_right = 742.0
+margin_bottom = 320.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton5" type="OptionButton" parent="."]
+margin_left = 100.0
+margin_top = 500.0
+margin_right = 242.0
+margin_bottom = 520.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 600.0
+margin_top = 500.0
+margin_right = 742.0
+margin_bottom = 520.0
+rect_scale = Vector2( 2, 2 )
+text = "Start Game"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 990.0
+margin_right = 1020.0
+margin_bottom = 30.0
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
